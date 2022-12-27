@@ -1,0 +1,37 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Network_setup.gd" type="Script" id=1]
+
+[node name="Network_setup" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Server_button" type="Button" parent="."]
+margin_left = 408.0
+margin_top = 183.0
+margin_right = 626.0
+margin_bottom = 259.0
+text = "CREATE ROOM"
+
+[node name="Join_button" type="Button" parent="."]
+margin_left = 370.655
+margin_top = 321.436
+margin_right = 591.655
+margin_bottom = 382.436
+text = "JOIN ROOM"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Server_ip_address" type="Label" parent="."]
+margin_left = 350.124
+margin_top = 26.727
+margin_right = 639.124
+margin_bottom = 72.727
+text = "No IP found..."
+[connection signal="pressed" from="Server_button" to="." method="_on_Create_server_pressed"]
+[connection signal="pressed" from="Join_button" to="." method="_on_Join_server_pressed"]

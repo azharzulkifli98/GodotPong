@@ -21,3 +21,4 @@ func get_opponent_direction():
 			return -1
 	else:
 		return 0
+		get_viewport().get_mouse_position().x

@@ -16,8 +16,12 @@ _global_script_class_icons={
 [application]
 
 config/name="PracticePong"
-run/main_scene="res://Level/Level.tscn"
+run/main_scene="res://Network_setup.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+Network="*res://Network.gd"
 
 [rendering]
 
